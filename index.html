@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joana Clarinha | Espaços de Presença</title>
+    <meta name="description" content="Através da Thai Yoga Massage, Joana Clarinha ajuda o corpo a recuperar espaço, respiração e mobilidade. Através de websites claros e sensíveis, ajuda profissionais do corpo a serem encontrados online com verdade.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar" aria-label="Navegação principal">
+        <a href="index.html" class="logo">Joana Clarinha<span class="dot">.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="massagem.html">O Toque</a></li>
+            <li><a href="websites.html">O Ecrã</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="#contacto" class="nav-cta">Marcar</a></li>
+        </ul>
+
+        <div class="lang-switcher" aria-label="Seleção de idioma">
+            <a href="index.html" class="active">PT</a>
+            <a href="en.html">EN</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content container">
+            <span class="eyebrow reveal">Presença no corpo. Presença no digital.</span>
+
+            <h1 class="reveal">
+                Corpo que <em>respira</em>.<br>
+                Trabalho que é <em>visto</em>.
+            </h1>
+
+            <p class="hero-sub reveal">
+                Através da Thai Yoga Massage, ajudo o corpo a recuperar espaço, respiração e mobilidade.
+                Através de websites claros e sensíveis, ajudo profissionais do corpo a serem encontrados online com verdade.
+            </p>
+
+            <div class="hero-choices reveal">
+                <a href="massagem.html" class="btn btn-primary">Ver massagens</a>
+                <a href="websites.html" class="btn btn-outline">Ver websites</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="split-experience">
+            <article class="experience-card body-focus reveal">
+                <div class="card-image" style="background-image: url('img/corpo-detail.jpg');" aria-hidden="true"></div>
+                <div class="card-content">
+                    <span class="subtitle">Massagem</span>
+                    <h2>O Toque</h2>
+                    <p>
+                        Um espaço de escuta, presença e mobilidade. A Thai Yoga Massage trabalha o corpo com profundidade,
+                        ritmo e atenção, ajudando a libertar tensões e a devolver amplitude ao movimento.
+                    </p>
+                    <a href="massagem.html" class="link-arrow">Ver massagens →</a>
+                </div>
+            </article>
+
+            <article class="experience-card digital-focus reveal">
+                <div class="card-image" style="background-image: url('img/digital-detail.jpg');" aria-hidden="true"></div>
+                <div class="card-content">
+                    <span class="subtitle">Websites</span>
+                    <h2>O Ecrã</h2>
+                    <p>
+                        Websites claros, humanos e sensíveis para terapeutas, professores e profissionais do corpo.
+                        Uma presença digital com verdade, estrutura e espaço para a essência aparecer.
+                    </p>
+                    <a href="websites.html" class="link-arrow">Ver websites →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="manifesto-teaser section reveal">
+            <div class="small-container text-center">
+                <p class="italic">
+                    Um corpo tenso e um website confuso partilham o mesmo problema: falta de espaço para a essência aparecer.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-preview section reveal">
+            <div class="container section-grid">
+                <div class="about-image">
+                    <img src="img/joana-placeholder.jpg" alt="Retrato de Joana Clarinha">
+                </div>
+
+                <div class="about-text">
+                    <span class="subtitle">Sobre</span>
+                    <h2>Entre o corpo e o digital</h2>
+                    <p>
+                        Trabalho entre duas formas de presença: a do corpo, que precisa de espaço para respirar, e a do digital,
+                        que precisa de clareza para comunicar.
+                    </p>
+                    <p>
+                        A minha prática une sensibilidade, escuta e estrutura — tanto no toque como no ecrã.
+                        Em ambos os casos, o objetivo é o mesmo: criar espaço para que algo verdadeiro se revele.
+                    </p>
+                    <a href="sobre.html" class="btn btn-secondary">Conhecer o percurso</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-preview section reveal">
+            <div class="small-container text-center">
+                <span class="subtitle">Palavras</span>
+                <h2>Experiências de presença</h2>
+                <blockquote class="testimonial-quote">
+                    “Foi a primeira vez que senti o corpo realmente a abrandar.”
+                </blockquote>
+                <p class="testimonial-author">— Nome da cliente</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="section contact-hub reveal">
+            <div class="container text-center">
+                <span class="subtitle">Contacto</span>
+                <h2>Vamos conversar?</h2>
+                <p>Escolha o caminho que quer explorar — mostro-lhe o próximo passo.</p>
+
+                <div class="contact-options">
+                    <button type="button" class="btn-choice" onclick="showForm('massagem')">Marcar massagem</button>
+                    <button type="button" class="btn-choice" onclick="showForm('digital')">Criar website</button>
+                </div>
+
+                <div id="forms-container" class="mt-2">
+                    <form id="form-massagem" class="contact-form hidden">
+                        <div class="form-group">
+                            <label for="nome-massagem">Nome</label>
+                            <input type="text" id="nome-massagem" name="nome" placeholder="O seu nome">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contacto-massagem">Email ou telefone</label>
+                            <input type="text" id="contacto-massagem" name="contacto" placeholder="Como prefere ser contactado">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem-massagem">O que procura neste momento?</label>
+                            <textarea id="mensagem-massagem" name="mensagem" rows="4" placeholder="Tensão, cansaço, dor, vontade de experimentar..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar pedido</button>
+                    </form>
+
+                    <form id="form-digital" class="contact-form hidden">
+                        <div class="form-group">
+                            <label for="nome-digital">Nome ou projeto</label>
+                            <input type="text" id="nome-digital" name="nome" placeholder="Nome ou nome do projeto">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email-digital">Email</label>
+                            <input type="email" id="email-digital" name="email" placeholder="email@exemplo.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fase-digital">Em que fase está?</label>
+                            <select id="fase-digital" name="fase">
+                                <option value="">Escolha uma opção</option>
+                                <option value="ideia">Ainda é uma ideia</option>
+                                <option value="site-existente">Já tenho site e quero melhorar</option>
+                                <option value="novo-site">Quero criar um novo website</option>
+                                <option value="estrategia">Preciso de orientação estratégica</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem-digital">O que gostaria de criar ou transformar?</label>
+                            <textarea id="mensagem-digital" name="mensagem" rows="4" placeholder="Conte-me um pouco sobre o seu projeto"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar pedido</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo footer-logo">Joana Clarinha<span class="dot">.</span></a>
+                <p>Do corpo ao digital, crio espaços de presença, clareza e verdade.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="massagem.html">O Toque</a></li>
+                    <li><a href="websites.html">O Ecrã</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#contacto">Marcar</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contacto</h4>
+                <p>Lisboa & Online</p>
+                <p><a href="mailto:joana@exemplo.com">joana@exemplo.com</a></p>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© 2026 Joana Clarinha. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showForm(type) {
+            const massagemForm = document.getElementById('form-massagem');
+            const digitalForm = document.getElementById('form-digital');
+            const buttons = document.querySelectorAll('.btn-choice');
+
+            // Reset forms
+            document.querySelectorAll('.contact-form').forEach(f => f.style.display = 'none');
+            
+            // Reset button active states
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            if (type === 'massagem') {
+                massagemForm.style.display = 'block';
+                buttons[0].classList.add('active');
+            }
+
+            if (type === 'digital') {
+                digitalForm.style.display = 'block';
+                buttons[1].classList.add('active');
+            }
+        }
+        
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Simple Reveal on Scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
